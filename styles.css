@@ -16,7 +16,7 @@ ol,ul{
 }
 
 h1{
-    padding-top: 150px;
+    padding-top: 180px;
 
     width: 300px;
     font-size: 34px;
@@ -28,33 +28,41 @@ h1{
     padding-top: 0;
 }
 .ul_links {
-    height: 100vh;
-    width: 0;
-    background-color: rgb(234, 234, 234);
+    height: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.098);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.479),  #30a0b467);
+    backdrop-filter: blur(3px);
     position: absolute;
     /* height: calc(100vh - var(--altura_header)); */
     display: flex;
     flex-direction: column;
-    align-items: left;
     gap: 0;
     overflow: hidden;
     transition: .1s;
     line-height: 0px;
-    text-align: left;
-    vertical-align: top;
-    padding-top: 150px;
+    top: 48px;
     right: -10px;
-    top: -25px;
+    justify-content: center;
 
+
+}
+
+.seccion3{
+    background-color: antiquewhite;
+    height: 1800px;
+}
+#menu-toggle:checked + .menu-icon .ul_links {
+    height: calc(100vh - 175px);
 }
 .fondo{
     height: 0;
 }
 
 .inicio{
-    height: calc(500px);
+    height: calc(540px);
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.294),#c5e0e3c4, #1a869266),
-                      url("fondo.png");
+                      url("images/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -63,7 +71,7 @@ h1{
     display: flex;
     align-items: center;
     width: 100vw;
-    margin-left: 80px;
+    justify-content: center;
     height: 60px;
     text-transform: uppercase;
     border-bottom: 2px solid rgba(0, 0, 0, 0.138);
@@ -78,7 +86,8 @@ h1{
     font-size:20px;
     font-family: "Rubik", sans-serif;
     font-weight: 500;
-    color: #828282;
+    color: #ffffff;
+
 }
 .menu-icon {
         /* box-sizing: content-box;
@@ -91,7 +100,7 @@ h1{
         display: flex;
         justify-content: right;
         position: relative;
-        top: -42px ;
+        top: calc(5px - 48.5px) ;
     }
 
 #menu-toggle{
@@ -158,9 +167,7 @@ header{
     transform: rotate(-45deg) ;
 }
 
-#menu-toggle:checked + .menu-icon .ul_links {
-    width: 100vw;
-}
+
 
 main{
 
@@ -170,31 +177,33 @@ main{
 
 
 .turnos-links{
+    padding-right: 10px;
     padding-top: 150px;
     display: flex;
+    justify-content: space-between;
     gap: 20px;
     font-weight: 600;
 }
 .WebTurno{
     display: flex;
-    align-content: center;
-    gap: 5px;
+    align-items: center;
+    gap: 7px;
     border-radius: 5px;
-    padding:7px;
+    padding:9px;
     background-color: #30A0B4;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .WhatsappTurno{
     display: flex;
-    align-content: center;
-    gap: 5px;
+    align-items: center;
+    gap: 7px;
     border-radius: 5px;
-    padding: 7px;
+    padding: 9px;
     background-color: #ffffff;
     color: #707070;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .seccion2 h2{
