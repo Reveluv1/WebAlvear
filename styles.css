@@ -53,12 +53,14 @@ h1{
     height: 1800px;
 }
 #menu-toggle:checked + .menu-icon .ul_links {
-    height: calc(100vh - 175px);
+    height: calc(100vh - 75px);
 }
 .fondo{
     height: 0;
 }
-
+body.menu-abierto {
+    overflow: hidden; /* Deshabilita el desplazamiento */
+}
 .inicio{
     height: calc(540px);
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.294),#c5e0e3c4, #1a869266),
@@ -244,4 +246,16 @@ p{
     background-color: #30A0B4;
     color: #ffffff;
     padding: 10px;
+}
+
+
+.container{
+    height: 500px;
+    border: 5px solid white;
+    background: rebeccapurple;
+}
+
+header{
+    width: 100vw;
+    position: fixed;
 }
