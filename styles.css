@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Onest", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+ol,ul{
+    list-style: none;
+}
+
+h1{
+    padding-top: 150px;
+
+    width: 300px;
+    font-size: 34px;
+    font-weight: 1000;
+    color: #028FAD;
+    line-height: 1.1;
+}
+.h1{
+    padding-top: 0;
+}
+.ul_links {
+    height: 100vh;
+    width: 0;
+    background-color: rgb(234, 234, 234);
+    position: absolute;
+    /* height: calc(100vh - var(--altura_header)); */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0;
+    overflow: hidden;
+    transition: .1s;
+    line-height: 0px;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 150px;
+    right: -10px;
+    top: -25px;
+
+}
+.fondo{
+    height: 0;
+}
+
+.inicio{
+    height: calc(500px);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.294),#c5e0e3c4, #1a869266),
+                      url("fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.li_links{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    margin-left: 80px;
+    height: 60px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.138);
+ 
+}
+
+#Portal {
+    border: 0;
+}
+
+.link{
+    font-size:20px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    color: #828282;
+}
+.menu-icon {
+        /* box-sizing: content-box;
+        cursor: pointer;
+        display: flex;
+        justify-content: right;
+        text-align: center;
+        position: relative; Añadimos posición relativa para ajustar las barras */
+        cursor: pointer;
+        display: flex;
+        justify-content: right;
+        position: relative;
+        top: -42px ;
+    }
+
+#menu-toggle{
+    display: none;
+}
+
+header{
+    background-color: #ffffff;
+    height: 75px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.logo{
+    height: 55px;
+}
+
+
+.menu-icon .bar {
+        border-radius: 15px;
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #30A0B4;
+        transition: transform 0.2s ease, top 0.2s ease; /* Cambiamos el orden de las transiciones */
+        position: absolute; /* Añadimos posición absoluta para poder mover las barras */
+        z-index: 5000;   
+    }
+   
+
+/* Estilos para la segunda barra */
+.menu-icon #bar1 {
+    top: 20px;
+    transform-origin: 50% 50%;
+}
+
+
+
+.menu-icon #bar2{
+        width: 35px;
+        top: 10px;
+        transform-origin: 50% 50%;  
+}
+    
+/* Estilos cuando el menú está activado */
+#menu-toggle:checked + .menu-icon #bar1  {
+        top: 10px;
+        transform: rotate(45deg) ;
+ 
+    
+    }
+    
+#menu-toggle:checked + .menu-icon #bar2 {
+    width: 30px;
+    transform: rotate(45deg) ;
+}
+    
+.inicio{
+    padding-left: 10px;
+}
+#menu-toggle:checked + .menu-icon #bar3 {
+    top: 10px;
+    transform: rotate(-45deg) ;
+}
+
+#menu-toggle:checked + .menu-icon .ul_links {
+    width: 100vw;
+}
+
+main{
+
+    background-color: #DEDEDE;
+    height: calc(100vh - 75px);
+}
+
+
+.turnos-links{
+    padding-top: 150px;
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+}
+.WebTurno{
+    display: flex;
+    align-content: center;
+    gap: 5px;
+    border-radius: 5px;
+    padding:7px;
+    background-color: #30A0B4;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.WhatsappTurno{
+    display: flex;
+    align-content: center;
+    gap: 5px;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: #ffffff;
+    color: #707070;
+    font-size: 14px;
+}
+
+.seccion2 h2{
+    font-weight: 400;
+    font-size: 25px;
+    color: #828282;
+    
+    padding-top: 30px;
+}
+.seccion2{
+    padding-left: 10px;
+}
+p{  
+    font-weight: 300;
+    font-size: 17px;
+    color: #828282;
+    padding-top: 10px;
+}
+
+.Cards{
+    padding-top: 30px;
+}
+.Card1{
+    width: calc(100vw - 20px);
+    background-color: #30A0B4;
+}
+
+
+
+
+#Portal .link{
+    border-radius: 5px;
+    height: 50px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #30A0B4;
+    color: #ffffff;
+    padding: 10px;
+}
