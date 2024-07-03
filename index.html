@@ -1,101 +1,121 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Casa Alvear</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="32x16" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <title>Casa Alvear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="static/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-   <a href="#" class="logo-link"> <img class="logo" src="images/LOGO.png" alt="casaalvear"></a>
-<nav>
-<input type="checkbox" id="menu-toggle">
-<label for="menu-toggle" class="menu-icon">
-    <span id="bar1" class="bar"></span>
-    <span id="bar2" class="bar"></span>
-    <span id="bar3" class="bar"></span>
-    <ul class="ul_links">
-        <li class="li_links">
-            <a id="profesionales" href="#Profesionales" class="link">Profesionales</a>
-        </li>
-        <li class="li_links">
-            <a href="#CasaAlvear" class="link">Casa Alvear</a>
-        </li>
-        <li class="li_links">
-            <a href="#Tratamientos" class="link">Tratamientos Estéticos</a>
-        </li>
-        <li class="li_links">
-            <a href="#DondeEstamos" class="link">Dónde estamos</a>
-        </li>
-        <li class="li_links" id="Portal">
-            <a href="#" class="link" >Portal pacientes</a>
-        </li>
-    </ul>
-</label>
-</nav>
-<div class="HOLA"></div>
-</header>
-<main>
-    <article class="inicio">
-        <h1>ESTAMOS AL SERVICIO</h1>
-        <h1 class="h1">DE TU BIENESTAR</h1>
-        <ul class="turnos-links">
-            <li>
-                <a class="WebTurno" href="https://casaalvear.logimed.com.ar/seleccion" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-hand-index-thumb" viewBox="0 0 16 16">
-                        <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 0 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 1 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.118a.5.5 0 0 1-.447-.276l-1.232-2.465-2.512-4.185a.517.517 0 0 1 .809-.631l2.41 2.41A.5.5 0 0 0 6 9.5V1.75A.75.75 0 0 1 6.75 1M8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v6.543L3.443 6.736A1.517 1.517 0 0 0 1.07 8.588l2.491 4.153 1.215 2.43A1.5 1.5 0 0 0 6.118 16h6.302a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5 5 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.6 2.6 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046zm2.094 2.025"/>
-                    </svg>
-                    TURNOS ONLINE
-                </a>
-            </li>
-            <li>
-               
-                <a class="WhatsappTurno" href="#" id="whatsapp-link" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                    </svg>
-                    TURNOS WHATSAPP
-                </a>
-            </li>
-        </ul>
-    </article>
-    <section id="Profesionales" class="seccion2">
-        <h2>Equipo Profesional</h2>
-        EWREWREWREWRWEREWRW
-        <p>Profesionales de todas las especialidades comprometidos con el bienestar del paciente.</p>
-        <div class="Cards">
-            <div class="Card1">
-                Dr Gonzalo Chorzepa
+    <main>
+        <header>
+            <a href="#" class="logo-link">
+                <img class="logo" src="static/images/logo.png" >
+            </a>
+            <nav>
+                <input type="checkbox" id="menu-celular">
+                <label class="menu-icon" for="menu-celular">
+                    <div class="icono-menu">
+                        <span id="bar1" class="bar"></span>
+                        <span id="bar2" class="bar"></span>
+                        <span id="bar3" class="bar"></span>
+                    </div>
+                    <ul class="links-celular">
+                        <li class="borde">
+                            <a class="navegacion" href="#inicio">INICIO</a>
+                        </li>
+                        <li>
+                            <a class="navegacion" href="#profesionales">PROFESIONALES</a>
+                        </li>
+                        <li>
+                            <a class="navegacion" href="#casaalvear">CASA ALVEAR</a>
+                        </li>
+                        <li>
+                            <a class="navegacion" href="#tratamientos">TRATAMIENTOS ESTÉTICOS</a>
+                        </li>
+                        <li>
+                            <a class="navegacion" href="#dondeestamos">DÓNDE ESTAMOS</a>
+                        </li>
+                        <li class="botonportal-mobile">
+                           <a class="portal" href="#portal">PORTAL PACIENTES</a> 
+                        </li>
+                    </ul>
+                </label>
+                <ul class="links-desktop">
+                    <li class="contenedor-navegacion">
+                        <a class="navegacion-desktop" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="contenedor-navegacion">
+                        <a class="navegacion-desktop" href="#profesionales">Profesionales</a>
+                    </li>
+                    <li class="contenedor-navegacion">
+                        <a class="navegacion-desktop" href="#casaalvear">Casa alvear</a>
+                    </li>
+                    <li class="contenedor-navegacion">
+                        <a class="navegacion-desktop" href="#tratamientos">Tratamientos estéticos</a>
+                    </li>
+                    <li class="contenedor-navegacion">
+                        <a class="navegacion-desktop" href="#dondeestamos">Dónde estamos</a>
+                    </li>
+                    <li>
+                </ul>
+                
+            </nav>
+            <div class="botonportal">
+                <a class="portaldesktop" href="#portal">Portal pacientes</a>
             </div>
-            
-        </div>
-    </section>
-    <section id="CasaAlvear" class="seccion2">
-        <div class="container">
-           uno
-        </div>
-    </section>
-    <section id="Tratamientos" class="seccion2">
-        <div class="container">
-            dos
-        </div>
-    </section>
-    <section id="DondeEstamos" class="seccion2">
-        <div class="container">
-            tres
-        </div>
-    </section>
-    <article class="seccion3">
-        werewrw
-    </article>
-</main>
+        </header>
+        <section id="inicio">
+            <article class="presentacion">
+                <div class="title"> 
+                    <h1>Estamos al servicio de tu bienestar</h1>
+                </div>
+                <ul class="turnos">
+                    <li>
+                        <a class="conocenos" href="#conocenos">Conocenos</a>
+                    </li>
+                    <li>
+                        <a class="boton-online" href="https://casaalvear.logimed.com.ar/">TURNOS ONLINE</a>
+                    </li>
+                    <li>
+                        <a  class="boton-whatsapp" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">TURNOS WHATSAPP</a>
+                    </li>
+                </ul>
+            </article>
 
-
+        </section >
+        <section id="profesionales">
+            <article class="contenedor">
+                <h2>SECCION 2</h2>
+            </article>
+        </section>
+        <section id="casaalvear">
+            <article class="contenedor">
+                <h2>SECCION 3</h2>
+            </article>
+        </section>
+        <section id="tratamientos">
+            <article class="contenedor">
+                <h2>SECCION 4</h2>
+            </article>
+        </section >
+        <section id="dondeestamos">
+            <article class="contenedor">
+                <h2>SECCION 5</h2>
+            </article>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </html>
