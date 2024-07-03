@@ -73,3 +73,11 @@ logo.addEventListener('click', function(e) {
     behavior: 'smooth' // Opciones de desplazamiento suave
   });
 });
+
+
+const toggleMenuButton = document.getElementById('toggleMenu');
+const menu1 = document.getElementById('menu');
+
+toggleMenuButton.addEventListener('click', function() {
+  menu1.style.display = menu1.style.display === 'none' ? 'block' : 'none';
+});

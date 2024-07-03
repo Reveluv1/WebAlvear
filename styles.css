@@ -30,9 +30,9 @@ h1{
 .ul_links {
     height: 0;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.098);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.479),  #30a0b467);
-    backdrop-filter: blur(3px);
+    background-color: #EEEEEE;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.479),  #30a0b467);*/ 
+  
     position: absolute;
     /* height: calc(100vh - var(--altura_header)); */
     display: flex;
@@ -43,7 +43,7 @@ h1{
     line-height: 0px;
     top: 48px;
     right: -10px;
-    justify-content: center;
+    justify-content: left;
 
 
 }
@@ -194,7 +194,7 @@ main{
     padding:9px;
     background-color: #30A0B4;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .WhatsappTurno{
@@ -205,7 +205,7 @@ main{
     padding: 9px;
     background-color: #ffffff;
     color: #707070;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .seccion2 h2{
@@ -259,3 +259,30 @@ header{
     width: 100vw;
     position: fixed;
 }
+
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 10px;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    padding: 8px 12px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .menu ul li a:hover {
+    color: #555;
+  }
