@@ -9,6 +9,7 @@ body{
 
 a{
     text-decoration: none;
+    color: #3a3a3a95;
 }
 ol,ul{
     list-style: none;
@@ -60,41 +61,29 @@ header{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.479),  #30a0b467);*/ 
     position: absolute;
     /* height: calc(100vh - var(--altura_header)); */
     top: 70px;
-    right: 0;
+    left: 0;
     transition: .1s;
-    gap: 20px;
 }
 
 .navegacion {
-    font-size: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    height:50px;
+    border-bottom: 1px solid    rgba(0, 0, 0, 0.109);
+    font-size: 15px;
     color: #6e6e6e90;
+
 }
 
-.borde{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    border-top: 2px solid rgba(0, 0, 0, 0.068);
-    padding-top: 20px;
-}
-.portal{
-    border-radius: 3px;
-    padding: 5px 10px;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    background-color:#84B4CE;
-}
 
 /*Animación menú desplegable*/
 #menu-celular:checked + .menu-icon .links-celular{
     height: fit-content;
-    padding-bottom: 30px;
 }
 #menu-celular:checked + .menu-icon #bar2 {
     opacity: 0;
@@ -112,9 +101,9 @@ header{
 }
 
 /* Estilo para el enlace activo */
-.navegacion.active {
-    color: #6e6e6e; /* Cambia el color de texto cuando se hace scroll a la sección */
-    font-weight: 500; /* Ejemplo: hacer el texto en negrita */
+.focus.active {
+    font-weight: 500;
+    color: rgba(59, 59, 59, 0.711);
 }
 
 body{

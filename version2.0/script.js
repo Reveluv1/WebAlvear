@@ -30,7 +30,7 @@ links.forEach(enlace => {
 
 document.addEventListener('DOMContentLoaded', function() {
     // Obtener todos los enlaces de navegación
-    const links = document.querySelectorAll('.navegacion');
+    const links = document.querySelectorAll('.focus');
 
     // Función para añadir la clase activa al enlace correspondiente
     function actualizarEstado() {
