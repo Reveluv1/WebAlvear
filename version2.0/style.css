@@ -30,7 +30,8 @@ header{
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    width: 100vw;
+    width: 100%;
+    top: 0;
 }
 .bar {
     border-radius: 15px;
@@ -116,17 +117,20 @@ header{
     font-weight: 500; /* Ejemplo: hacer el texto en negrita */
 }
 
-
+body{
+    padding-top: 70px;
+}
 
 /*SECCION 1*/
 .presentacion{
     background-position: 40%;
     background-repeat: no-repeat;
     background-size: cover;
-    height:600px;
+    height:650px;
     background-image: linear-gradient(to right, #00000074,#0f565e6c, #1a869279),url("static/images/fondo.png");
     display: grid;
     grid-template-rows: 70%;
+    width: 100%;
 }
 
 
@@ -140,7 +144,6 @@ h1{
 
     padding-top: 200px;
     padding-left: 20px;
-    width: 360px;
     font-size: 50px;
     color: white;
     font-weight: 500;
